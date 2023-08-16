@@ -24,7 +24,7 @@ function CreateBook() {
     }
 
     axios
-    .post('http://localhost:5000/', createBookRequest)
+    .post('https://csis-3380-final-backend-render.onrender.com/', createBookRequest)
     .then((res) => {
       let book = res.data.BookAdded
       console.log(book)
